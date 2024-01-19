@@ -7,6 +7,7 @@ def get_1min(symbol, start_date, end_date, save=True):
     config = configparser.ConfigParser()
     config.read(r'C:\Users\b_ban\Documents\VSCode\config\config.ini')
     api_key = config["POLYGON"]["API_KEY"]
+    
     # Define the API endpoint and parameters
     url = f"https://api.polygon.io/v2/aggs/ticker/{symbol}/range/1/minute/{start_date}/{end_date}?adjusted=false&sort=asc&limit=50000&apiKey={api_key}"
 
