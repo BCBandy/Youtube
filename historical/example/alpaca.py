@@ -42,7 +42,10 @@ def get_daily(symbol):
     # Extract data from bars and append to lists
     for bar in chart_resp[symbol]:
         print(bar)
-        dt = pd.to_datetime(bar.timestamp, utc=True).tz_convert('US/Eastern')
+        #dt = pd.to_datetime(bar.timestamp, utc=True).tz_convert('US/Eastern')
+        #dt = pd.to_datetime(bar.timestamp, utc=True)
+        #dt = (bar.timestamp - pd.Timestamp("1970-01-01", tz='US/Eastern')) // pd.Timedelta('1s')
+        dt = (bar.timestamp - pd.Timestamp("1970-01-01", tz='UTC')) // pd.Timedelta('1s')
         datetimes.append(dt)
         opens.append(bar.open)
         highs.append(bar.high)

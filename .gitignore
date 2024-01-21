@@ -1,3 +1,5 @@
 demo
 config.ini
 empty_folders
+__pychache__
+*.pyc
