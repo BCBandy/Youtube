@@ -14,7 +14,7 @@ def get_daily(symbol):
     api_secret = config["ALPACA"]["API_SECRET"]
 
     # Get daily data for the specified stock and date range
-    start_date = date.today() - timedelta(days=30)
+    start_date = date.today() - timedelta(days=5*365)
     api = stock.StockHistoricalDataClient(api_key=api_key, secret_key=api_secret)
 
     request = StockBarsRequest(
@@ -41,11 +41,8 @@ def get_daily(symbol):
 
     # Extract data from bars and append to lists
     for bar in chart_resp[symbol]:
-        print(bar)
         #dt = pd.to_datetime(bar.timestamp, utc=True).tz_convert('US/Eastern')
-        #dt = pd.to_datetime(bar.timestamp, utc=True)
-        #dt = (bar.timestamp - pd.Timestamp("1970-01-01", tz='US/Eastern')) // pd.Timedelta('1s')
-        dt = (bar.timestamp - pd.Timestamp("1970-01-01", tz='UTC')) // pd.Timedelta('1s')
+        dt = (bar.timestamp - pd.Timestamp("1970-01-01", tz='UTC')) // pd.Timedelta('1s') #get epoch
         datetimes.append(dt)
         opens.append(bar.open)
         highs.append(bar.high)

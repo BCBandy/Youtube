@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="stocks">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DESKTOP-BKHK1H3:DESKTOP-BKHK1H3\b_ban">
+          <Created>2024-01-22T20:19:40.6705617-05:00</Created>
+          <Type>SQL</Type>
+          <Server>DESKTOP-BKHK1H3</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="create_row_number.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>create_row_number.sql</FullPath>
+        </FileNode>
+        <FileNode Name="historical_d3surge.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-BKHK1H3:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-BKHK1H3</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>historical_d3surge.sql</FullPath>
+        </FileNode>
+        <FileNode Name="historical_gainers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-BKHK1H3:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-BKHK1H3</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>historical_gainers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="historical_gappers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-BKHK1H3:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-BKHK1H3</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>historical_gappers.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
